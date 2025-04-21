@@ -1,0 +1,12 @@
+{
+  "name": "dashboard-api",
+  "version": "1.0.0",
+  "description": "API для учебного проекта 4-NodeJS",
+  "license": "ISC",
+  "author": "Tatyana Elhina",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
