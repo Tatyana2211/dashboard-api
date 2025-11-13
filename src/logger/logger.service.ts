@@ -1,5 +1,6 @@
 import { Logger, ILogObj } from "tslog";
 import { ILogger } from './logger.interface';
+import 'reflect-metadata';
 
 export class LoggerService implements ILogger{
 	logger: Logger<ILogObj>;
