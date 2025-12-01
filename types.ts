@@ -1,5 +1,3 @@
-import { ExeptionFilter } from './src/errors/exeption.filter';
-
 export const TYPES = {
 	Application: Symbol.for('Application'),
 	ILogger: Symbol.for('ILogger'),
