@@ -6,7 +6,7 @@ import { ILogger } from './logger/logger.interface';
 import { inject, injectable } from 'inversify';
 import { TYPES } from '../types';
 import 'reflect-metadata';
-import { IUserController } from './users/user.controller.interface';
+import { IUserController } from './users/users.controller.interface';
 
 @injectable()
 export class App {
@@ -23,15 +23,15 @@ export class App {
 		this.port = 8000;
 	}
 
-	useRoutes() {
+	useRoutes(): void {
 		this.app.use('/users', this.userController.router);
 	}
 
-	useExeptionFilters() {
+	useExeptionFilters(): void {
 		this.app.use(this.exeptionFilter.catch.bind(this.exeptionFilter));
 	}
 
-	public async init() {
+	public async init(): Promise<void> {
 		this.useRoutes();
 		this.useExeptionFilters();
 		this.server = this.app.listen(this.port);
