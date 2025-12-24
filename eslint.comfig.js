@@ -14,6 +14,7 @@ export default {
 		'plugin:prettier/reccomrnded'
 	],
 	rules: {
+		'no-empty-function': 'off',
 		'@typescript-eslint/ban-types':'off',
 		'@typescript-eslint/no-unused-vars': [
 			'off'
